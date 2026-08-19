@@ -18,11 +18,29 @@ def download_pdb(pdb_id, out_dir = "structures"):
 
     return str(outfile)
 
-def download_alphafold(uniprot_id, out_dir = "structures"):
+def get_alphafold_url(uniprot_id):
+
     url = (
-        f"https://alphafold.ebi.ac.uk/files/"
-        f"AF-{uniprot_id}-F1-model_v4.pdb"
+        f"https://alphafold.ebi.ac.uk/api/prediction/"
+        f"{uniprot_id}"
     )
+
+    r = requests.get(url)
+
+    if r.status_code != 200:
+        return None
+
+    data = r.json()
+
+    if len(data) == 0:
+        return None
+
+    return data[0]['pdbUrl']
+
+def download_alphafold(uniprot_id, out_dir = "structures"):
+    
+    url = get_alphafold_url(uniprot_id)
+    print(url)
     Path(out_dir).mkdir(exist_ok = True)
 
     outfile = Path(out_dir) / f"{uniprot_id}.pdb"
@@ -53,4 +71,4 @@ def get_structures():
         print(f"Succesffuly downloaded {t}")
 
 
-get_structures()
+#get_structures()
