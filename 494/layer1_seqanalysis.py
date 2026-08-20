@@ -35,6 +35,14 @@ def longest_disorder(scores):
     return longest
 
 def analyze_sequence(sequence):
+    sequence = str(sequence)
+    sequence = sequence.strip()
+    sequence = sequence.replace(" ", "")
+    sequence = sequence.replace("\n", "")
+    sequence = sequence.replace("\r", "")
+    sequence = sequence.upper()
+
+    
 
     analysis = ProteinAnalysis(sequence)
 
@@ -48,7 +56,7 @@ def analyze_sequence(sequence):
         "charge_at_7pH" : analysis.charge_at_pH(7.0),
     }
 
-    aa_frequencies = analysis.amino_acids_percent()
+    aa_frequencies = analysis.amino_acids_percent
     for aa in aa_frequencies.keys():
         feature_vector[f"aa_{aa}"] = aa_frequencies[aa]
 
@@ -90,8 +98,17 @@ def apply_layer1(metadata):
 
     feature_df = pd.DataFrame(features)
 
-    return pd.concat([working_df.reset_index(drop = True), feature_df], axis = 1)
+    concat = pd.concat([working_df.reset_index(drop = True), feature_df], axis = 1)
+
+    '''with pd.ExcelWriter("layer1_analysis.xlsx") as writer:
+        concat.to_excel(writer, sheet_name = "1", index = None)'''
 
 
+    return concat
+
+
+df = pd.read_excel("initial.xlsx")
+
+apply_layer1(df)
 
 

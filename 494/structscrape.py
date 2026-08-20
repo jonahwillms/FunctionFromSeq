@@ -3,6 +3,8 @@ import pandas as pd
 import pullstructs
 from io import StringIO
 import subprocess
+from Bio.PDB import PDBParser, PDBIO, Select
+import shutil
 
 def add_structures(metadata):
 
@@ -19,6 +21,82 @@ def add_structures(metadata):
 
         metadata.loc[idx, "structure_file"] = structure_file
         print(f"Downloaded {row.uniprot_id}")
+
+    return metadata
+
+def get_chain_length(pdb_file):
+    parser = PDBParser(QUIET = True)
+
+    structure = parser.get_structure("protein", pdb_file)
+
+    model = structure[0]
+
+    lengths = {}
+
+    for chain in model:
+        lengths[chain.id] = sum(residue.id[0] == " " for residue in chain)
+
+    return lengths
+
+def clean_pdb(pdb_file, expected_length, output_file):
+
+    lengths = get_chain_length(pdb_file)
+
+    if len(lengths) == 1:
+        shutil.copy(pdb_file, output_file)
+
+        return output_file
+    else:
+        rep = None
+
+        for chain, length in lengths.items():
+
+            if (abs(length - expected_length) / expected_length) < 0.15:
+                rep = chain
+                break
+
+
+    if rep == None:
+        return None
+
+    class ChainSelect(Select):
+
+        def __init__(self, chain_id):
+            self.chain_id = chain_id
+
+        def accept_chain(self, chain):
+            return (chain.id == self.chain_id)
+
+    parser = PDBParser(QUIET = True)
+    structure = parser.get_structure("protein", pdb_file)
+    io = PDBIO()
+    io.set_structure(structure)
+    print(
+    f"{pdb_file}: "
+    f"selected chain {rep}"
+    )
+    io.save(output_file, ChainSelect(rep))
+    return {
+    "selected_chain": rep,
+    "chain_lengths": lengths
+        }
+
+def clean_structure_folder(metadata):
+
+    metadata['clean_structure_file'] = None
+
+    for idx, row in metadata.iterrows():
+
+        infile = row.structure_file
+
+        outfile = (
+            f"cleaned_structures/"
+            f"clean_{row.structure_file}"
+        )
+
+        clean_pdb(infile, row.length, outfile)
+
+        metadata.loc[idx, "clean_structure_file"] = outfile
 
     return metadata
 
@@ -144,6 +222,9 @@ def uniprot_search(terms,identity = 0.70, operator = "AND"):
 
     #start pulling structures. If no crystal structure exists, pull the AF structure
     clean_metadata = add_structures(clean_metadata)
+
+    #filter pdb structures so that all inputted chains are monomers (this will match better with alphafold stuff)
+    clean_metadata = clean_structure_folder(clean_metadata)
 
     return clean_metadata
 
