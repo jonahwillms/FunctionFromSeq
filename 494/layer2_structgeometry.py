@@ -6,6 +6,7 @@ import numpy as np
 
 
 def analyze_structure(pdb_file):
+
     u = mda.Universe(pdb_file)
 
     atoms = u.select_atoms("protein")
@@ -56,9 +57,9 @@ def apply_layer2(metadata):
         id = ""
         if row.pull_id[:3] == "AF-":
             id = row.pull_id[3:-3]
-            id = f"{id}.pdb"
+            id = f"structures/{id}.pdb"
         else:
-            id = f"{row.pull_id}.pdb"
+            id = f"structures/{row.pull_id}.pdb"
 
         features.append(analyze_structure(id))
 
@@ -70,4 +71,9 @@ def apply_layer2(metadata):
         concat.to_excel(writer, sheet_name = '1', index = None)
 
     return concat
+
+
+
+df = pd.read_excel("initial.xlsx")
+apply_layer2(df)
     

@@ -8,13 +8,17 @@ from sklearn.preprocessing import StandardScaler
 def analyze_df():
 
     df = pd.read_excel("layer2_analysis.xlsx")
+    df1 = pd.read_excel("layer1_analysis.xlsx")
+
+    df = df.merge(df1, on = ["Source", "Function", "Class", "sequence"], how = 'left')
+
 
     plot_info = df[
         ["Source", "Function", "Class"]
     ].copy()
 
 
-    feature_cols = [
+    '''feature_cols = [
     "radius_of_gyration",
     "principal_axis_1",
     "principal_axis_2",
@@ -26,7 +30,72 @@ def analyze_df():
     "moment_3",
     "moment_ratio_1",
     "moment_ratio_2"
-        ]
+        ]'''
+    feature_cols = [
+
+    # ===== Layer 1: Sequence Features =====
+
+    "length",
+    "MW",
+    "PI",
+    "aromaticity",
+    "instability_index",
+    "gravy",
+    "charge_at_7pH",
+
+    "positive_aa_freq",
+    "negative_aa_freq",
+    "polar_aa_freq",
+    "hydrophobic_aa_freq",
+
+    "LTA_motif_freq",
+    "max_basic_run",
+
+    "aromatic_freq",
+
+    "aa_A",
+    "aa_C",
+    "aa_D",
+    "aa_E",
+    "aa_F",
+    "aa_G",
+    "aa_H",
+    "aa_I",
+    "aa_K",
+    "aa_L",
+    "aa_M",
+    "aa_N",
+    "aa_P",
+    "aa_Q",
+    "aa_R",
+    "aa_S",
+    "aa_T",
+    "aa_V",
+    "aa_W",
+    "aa_Y",
+
+    # ===== Layer 2: Structure Geometry =====
+
+    "radius_of_gyration",
+
+    "principal_axis_1",
+    "principal_axis_2",
+    "principal_axis_3",
+
+    "axis_ratio_1",
+    "axis_ratio_2",
+
+    "moment_1",
+    "moment_2",
+    "moment_3",
+
+    "moment_ratio_1",
+    "moment_ratio_2",
+
+    # ===== Layer 2: Secondary Structure =====
+
+    
+        ]   
 
 
     X = df[feature_cols]
@@ -72,6 +141,11 @@ def analyze_df():
         "Colour"
     ] = "YkwD"
 
+    pca_df.loc[
+        pca_df["Source"] == "H7C6X6",
+        "Colour"
+    ] = "SalB"
+
     fig = px.scatter_3d(
         pca_df,
         x="PC1",
@@ -85,6 +159,7 @@ def analyze_df():
         ],
         color_discrete_map={
             "YkwD": "green",
+            "SalB" : "orange",
             "CAP/SCP": "red",
             "Polymer-binding": "blue",
             "Hydrolase": "purple",
