@@ -214,6 +214,11 @@ def analyze_df():
         "Colour"
     ] = "YkwD"
 
+    geom_df.loc[
+            pca_df["Source"] == "H7C6X6",
+            "Colour"
+        ] = "SalB"
+
     fig = px.scatter_3d(
         geom_df,
         x="axis_ratio_1",
@@ -226,12 +231,13 @@ def analyze_df():
             "Class"
         ],
         color_discrete_map={
-            "YkwD": "green",
-            "CAP/SCP": "red",
-            "Polymer-binding": "blue",
-            "Hydrolase": "purple",
-            "Other": "gray"
-        }
+                    "YkwD": "green",
+                    "SalB" : "orange",
+                    "CAP/SCP": "red",
+                    "Polymer-binding": "blue",
+                    "Hydrolase": "purple",
+                    "Other": "gray"
+                }
     )
 
     fig.update_traces(
