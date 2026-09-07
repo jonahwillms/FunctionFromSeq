@@ -2,8 +2,7 @@ from Bio.SeqUtils.ProtParam import ProteinAnalysis
 import pandas as pd
 import MDAnalysis as mda
 import numpy as np
-
-
+from MDAnalysis.analysis import dssp
 
 def analyze_structure(pdb_file):
 
@@ -46,6 +45,24 @@ def analyze_structure(pdb_file):
     feature_vector['moment_3'] = (inertia_eigs[2])
     feature_vector['moment_ratio_1'] = (inertia_eigs[0] / inertia_eigs[1])
     feature_vector['moment_ratio_2'] = (inertia_eigs[1]) / inertia_eigs[2]
+
+
+    #DSSP analysis
+    dssp_results = dssp.DSSP(u, select = 'protein').run()
+
+    #single letter codes array (secondary structure elements)
+    ss = dssp_results.secondary_structure
+    #solvent accesibility per residue
+    acc = dssp_results.sasa
+
+    ss_str = "".join(ss)
+
+    feature_vector['helix_fraction'] = ss_str.count("H") / len(ss_str)
+    feature_vector['sheet_fraction'] = ss.str.count("E") / len(ss_str)
+    feature_vector['coil_fraction'] = ss_str.count("-") / len(ss_str)
+
+    feature_vector['mean_sasa'] = float(np.mean(acc))
+    feature_vector['max_sasa'] = float(np.max(acc))
 
     return feature_vector
 
