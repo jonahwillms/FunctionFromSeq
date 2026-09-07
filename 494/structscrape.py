@@ -117,6 +117,8 @@ def write_fasta(metadata, outfile = "sequences.fasta"):
 
 def run_mmseqs(fasta, identity):
     #assumes mmseq is set up in path, need to figure this out before running the pipeline
+
+    #start working on this next, creating the redundancy net
     cmd = [
         "mmseqs",
         "easy-cluster",
@@ -129,9 +131,27 @@ def run_mmseqs(fasta, identity):
     subprocess.run(cmd, check = True)
 
     
+def choose_best_rep(df):
+    #1 prefer experimentally determined pdb structures
+    exp = df[df.experimental_structure]
+    if len(exp) > 0:
+        df = exp
 
+    #2 longest sequence
+    df = df.sort_values("length", ascending = False)
+
+    #3 reviewed entries
+    df['is_reviewed'] = ~df.uniprot_id.str.startswith("A0A")
+    df = df.sort_values("is_reviewed", ascending = False)
+
+    #if none of these things are true, just pick top uniprot id
+    df = df.sort_values("uniprot_id")
+
+    return df.iloc[0].uniprot_id
+    
 
 def remove_redundancy(metadata, identity, tmp_dir = "tmp"):
+
     fasta = write_fasta(metadata)
 
     run_mmseqs(fasta, identity)
@@ -145,15 +165,22 @@ def remove_redundancy(metadata, identity, tmp_dir = "tmp"):
                 'member'
             ]
         )
+
     metadata = metadata.merge(
         clusters,
         left_on = 'uniprot_id',
         right_on = 'member'
     )
 
-    metadata['is_representative'] = (metadata['uniprot_id'] == metadata['cluster_rep'])
+    new_reps = (metadata.groupby("cluster_rep").apply(choose_best_rep).reset_index(name = "new_rep"))
 
-    return metadata
+    metadata = metadata.merge(new_reps, on = "cluster_rep")
+    
+    metadata['is_representative'] = (metadata.uniprot_id == metadata.new_rep)
+
+    clean_metadata = metadata[metadata.is_representative].copy()
+
+    return clean_metadata
 
 def get_pdb_ids(uniprot_id):
 
@@ -215,16 +242,17 @@ def uniprot_search(terms,identity = 0.70, operator = "AND"):
         })
 
     metadata = pd.DataFrame(metadata_rows)
-    metadata = remove_redundancy(metadata, identity = identity)
-
+   
     #removing redundancy from metadata
-    clean_metadata = metadata[metadata['is_representative']].copy()
+    clean_metadata = remove_redundancy(metadata, identity = identity)
 
     #start pulling structures. If no crystal structure exists, pull the AF structure
     clean_metadata = add_structures(clean_metadata)
 
     #filter pdb structures so that all inputted chains are monomers (this will match better with alphafold stuff)
     clean_metadata = clean_structure_folder(clean_metadata)
+
+    
 
     return clean_metadata
 
