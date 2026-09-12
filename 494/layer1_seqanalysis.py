@@ -100,8 +100,8 @@ def apply_layer1(metadata):
 
     concat = pd.concat([working_df.reset_index(drop = True), feature_df], axis = 1)
 
-    '''with pd.ExcelWriter("layer1_analysis.xlsx") as writer:
-        concat.to_excel(writer, sheet_name = "1", index = None)'''
+    with pd.ExcelWriter("layer1_analysis.xlsx") as writer:
+        concat.to_excel(writer, sheet_name = "1", index = None)
 
 
     return concat

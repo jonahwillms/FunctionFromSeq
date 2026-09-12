@@ -9,8 +9,10 @@ def analyze_df():
 
     df = pd.read_excel("layer2_analysis.xlsx")
     df1 = pd.read_excel("layer1_analysis.xlsx")
+    df2 = pd.read_excel("layer3_analysis.xlsx")
 
     df = df.merge(df1, on = ["Source", "Function", "Class", "sequence"], how = 'left')
+    df = df.merge(df2, on = ["Source", "Function", "Class", "sequence"], how = 'left')
 
 
     plot_info = df[
@@ -34,6 +36,9 @@ def analyze_df():
     "sheet_fraction",
     "coil_fraction", 
     'total_sasa',
+    'std_potential',
+    'mean_potential',
+    'net_charge'
     ]
     '''
    feature_cols = [
@@ -226,9 +231,9 @@ def analyze_df():
 
     fig = px.scatter_3d(
         geom_df,
-        x="helix_fraction",
-        y="sheet_fraction",
-        z='total_sasa',
+        x="std_potential",
+        y="mean_potential",
+        z='net_charge',
         color="Colour",
         hover_data=[
             "Source",

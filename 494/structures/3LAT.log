@@ -1,0 +1,494 @@
+2026-09-11 23:19:51,823 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:19:51,823 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:19:51,823 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:19:51,823 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:19:51,824 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:19:51,869 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT.pdb
+2026-09-11 23:19:51,887 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:19:51,894 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for IMD.  Parsing as new residue.
+2026-09-11 23:19:51,894 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,894 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,894 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,895 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,895 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,895 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,895 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:19:51,895 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for BU1.  Parsing as new residue.
+2026-09-11 23:19:51,897 INFO:main.py:408:setup_molecule:Created biomolecule object with 482 residues and 1965 atoms.
+2026-09-11 23:19:51,897 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-11 23:19:51,897 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-11 23:19:51,898 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-11 23:19:51,898 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-11 23:19:51,899 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-11 23:19:51,899 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-11 23:19:51,899 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-11 23:19:51,900 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-11 23:19:51,900 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-11 23:19:51,900 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-11 23:19:51,900 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-11 23:19:51,900 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:19:51,903 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:19:51,911 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:19:51,913 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:19:51,913 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:19:51,914 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:19:51,942 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:19:52,046 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:19:52,170 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:19:53,108 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 304 skipped when optimizing H2 in HOH A 473
+2026-09-11 23:19:53,110 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:19:53,110 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:19:53,119 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,120 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,120 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,121 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,125 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,126 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:19:53,127 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:19:54,506 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:19:54,509 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:19:54,511 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:19:54,525 WARNING:main.py:311:print_pqr:Ignoring 1346 header lines in output.
+2026-09-11 23:19:54,526 WARNING:main.py:315:print_pqr:Ignoring 18 missing lines in output.
+2026-09-11 23:34:50,285 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:34:50,285 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:34:50,285 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:34:50,285 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:34:50,286 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:34:50,327 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT.pdb
+2026-09-11 23:34:50,333 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:34:50,338 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for IMD.  Parsing as new residue.
+2026-09-11 23:34:50,338 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,338 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:34:50,339 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for BU1.  Parsing as new residue.
+2026-09-11 23:34:50,341 INFO:main.py:408:setup_molecule:Created biomolecule object with 482 residues and 1965 atoms.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-11 23:34:50,341 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-11 23:34:50,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-11 23:34:50,342 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-11 23:34:50,342 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-11 23:34:50,343 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-11 23:34:50,343 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-11 23:34:50,343 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-11 23:34:50,343 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-11 23:34:50,343 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-11 23:34:50,343 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-11 23:34:50,343 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-11 23:34:50,343 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:34:50,346 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:34:50,353 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:34:50,356 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:34:50,356 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:34:50,356 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:34:50,383 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:34:50,487 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:34:50,614 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:34:51,529 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 304 skipped when optimizing H2 in HOH A 473
+2026-09-11 23:34:51,531 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:34:51,532 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:34:51,541 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,541 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,542 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,542 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,544 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,544 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:34:51,545 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:34:52,884 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:34:52,887 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:34:52,888 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:34:52,903 WARNING:main.py:311:print_pqr:Ignoring 1346 header lines in output.
+2026-09-11 23:34:52,903 WARNING:main.py:315:print_pqr:Ignoring 18 missing lines in output.
+2026-09-11 23:45:25,059 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:45:25,059 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:45:25,059 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:45:25,060 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:45:25,061 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:45:25,103 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-11 23:45:25,124 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:45:25,130 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for IMD.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,131 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,132 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:45:25,132 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for BU1.  Parsing as new residue.
+2026-09-11 23:45:25,133 INFO:main.py:408:setup_molecule:Created biomolecule object with 482 residues and 1965 atoms.
+2026-09-11 23:45:25,133 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-11 23:45:25,133 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-11 23:45:25,133 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-11 23:45:25,133 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-11 23:45:25,134 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-11 23:45:25,134 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-11 23:45:25,134 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-11 23:45:25,135 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-11 23:45:25,135 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-11 23:45:25,135 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-11 23:45:25,135 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:45:25,138 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:45:25,147 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:45:25,150 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:45:25,150 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:45:25,151 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:45:25,178 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:45:25,282 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:45:25,405 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:45:26,342 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 304 skipped when optimizing H2 in HOH A 473
+2026-09-11 23:45:26,344 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:45:26,345 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:45:26,355 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,356 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,357 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,358 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,360 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,360 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:45:26,361 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:45:27,721 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:45:27,724 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:45:27,726 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:45:27,739 WARNING:main.py:311:print_pqr:Ignoring 1346 header lines in output.
+2026-09-11 23:45:27,740 WARNING:main.py:315:print_pqr:Ignoring 18 missing lines in output.
+2026-09-11 23:53:09,310 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:53:09,310 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:53:09,310 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:53:09,310 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:53:09,311 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:53:09,354 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-11 23:53:09,374 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:53:09,379 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for IMD.  Parsing as new residue.
+2026-09-11 23:53:09,380 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,380 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,380 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,380 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,380 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,381 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,381 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:09,381 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for BU1.  Parsing as new residue.
+2026-09-11 23:53:09,382 INFO:main.py:408:setup_molecule:Created biomolecule object with 482 residues and 1965 atoms.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-11 23:53:09,382 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-11 23:53:09,382 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-11 23:53:09,383 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-11 23:53:09,383 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-11 23:53:09,383 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-11 23:53:09,384 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-11 23:53:09,384 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-11 23:53:09,384 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-11 23:53:09,384 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-11 23:53:09,384 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-11 23:53:09,384 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-11 23:53:09,384 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:53:09,387 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:53:09,394 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:53:09,398 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:53:09,399 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:53:09,399 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:53:09,427 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:53:09,532 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:53:09,658 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:53:10,582 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 304 skipped when optimizing H2 in HOH A 473
+2026-09-11 23:53:10,584 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:53:10,586 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 476 skipped when optimizing H2 in HOH A 245
+2026-09-11 23:53:10,595 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,596 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,597 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,597 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,599 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,600 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 473 skipped when optimizing H1 in HOH A 284
+2026-09-11 23:53:10,601 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:53:11,951 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:53:11,954 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:53:11,955 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:53:11,970 WARNING:main.py:311:print_pqr:Ignoring 1346 header lines in output.
+2026-09-11 23:53:11,970 WARNING:main.py:315:print_pqr:Ignoring 18 missing lines in output.
+2026-09-12 00:00:48,477 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:00:48,477 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:00:48,477 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:00:48,478 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:00:48,478 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:00:48,524 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-12 00:00:48,541 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:00:48,548 INFO:main.py:408:setup_molecule:Created biomolecule object with 207 residues and 1681 atoms.
+2026-09-12 00:00:48,549 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-12 00:00:48,549 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-12 00:00:48,549 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-12 00:00:48,549 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-12 00:00:48,549 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-12 00:00:48,550 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-12 00:00:48,550 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-12 00:00:48,550 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-12 00:00:48,551 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-12 00:00:48,551 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-12 00:00:48,551 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-12 00:00:48,551 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:00:48,554 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:00:48,562 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:00:48,565 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:00:48,565 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:00:48,565 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:00:48,593 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:00:48,694 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:00:48,816 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:00:49,086 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:00:49,089 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:00:49,090 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:00:49,101 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:06:41,268 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:06:41,268 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:06:41,268 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:06:41,269 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:06:41,270 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:06:41,312 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-12 00:06:41,331 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:06:41,338 INFO:main.py:408:setup_molecule:Created biomolecule object with 207 residues and 1681 atoms.
+2026-09-12 00:06:41,338 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-12 00:06:41,339 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-12 00:06:41,339 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-12 00:06:41,339 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-12 00:06:41,339 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-12 00:06:41,339 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-12 00:06:41,340 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-12 00:06:41,340 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-12 00:06:41,341 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-12 00:06:41,341 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-12 00:06:41,341 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-12 00:06:41,341 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:06:41,345 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:06:41,354 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:06:41,358 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:06:41,358 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:06:41,358 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:06:41,388 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:06:41,493 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:06:41,619 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:06:41,882 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:06:41,884 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:06:41,885 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:06:41,896 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:15:00,309 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:15:00,309 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:15:00,309 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:15:00,309 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:15:00,310 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:15:00,351 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-12 00:15:00,371 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:15:00,377 INFO:main.py:408:setup_molecule:Created biomolecule object with 207 residues and 1681 atoms.
+2026-09-12 00:15:00,377 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-12 00:15:00,378 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-12 00:15:00,378 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-12 00:15:00,378 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-12 00:15:00,378 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-12 00:15:00,378 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-12 00:15:00,378 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-12 00:15:00,379 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-12 00:15:00,379 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-12 00:15:00,379 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-12 00:15:00,380 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-12 00:15:00,380 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-12 00:15:00,380 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-12 00:15:00,380 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-12 00:15:00,380 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-12 00:15:00,380 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-12 00:15:00,380 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:15:00,383 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:15:00,392 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:15:00,396 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:15:00,396 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:15:00,397 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:15:00,426 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:15:00,528 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:15:00,651 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:15:00,921 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:15:00,923 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:15:00,924 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:15:00,935 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:21:21,538 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:21:21,539 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:21:21,539 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:21:21,539 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:21:21,540 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:21:21,581 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-12 00:21:21,601 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:21:21,608 INFO:main.py:408:setup_molecule:Created biomolecule object with 207 residues and 1681 atoms.
+2026-09-12 00:21:21,608 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-12 00:21:21,609 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-12 00:21:21,609 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-12 00:21:21,609 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-12 00:21:21,609 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-12 00:21:21,609 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-12 00:21:21,609 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-12 00:21:21,610 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-12 00:21:21,610 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-12 00:21:21,611 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-12 00:21:21,611 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-12 00:21:21,611 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-12 00:21:21,611 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:21:21,614 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:21:21,622 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:21:21,626 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:21:21,626 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:21:21,626 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:21:21,654 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:21:21,757 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:21:21,880 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:21:22,150 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:21:22,153 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:21:22,154 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:21:22,165 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:27:36,834 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:27:36,835 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:27:36,835 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:27:36,835 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:27:36,836 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:27:36,877 INFO:main.py:765:main_driver:Loading molecule: structures/3LAT_clean.pdb
+2026-09-12 00:27:36,896 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:27:36,902 INFO:main.py:408:setup_molecule:Created biomolecule object with 207 residues and 1681 atoms.
+2026-09-12 00:27:36,903 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 22.
+2026-09-12 00:27:36,903 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 22.
+2026-09-12 00:27:36,903 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 22.
+2026-09-12 00:27:36,903 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 22.
+2026-09-12 00:27:36,903 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 22.
+2026-09-12 00:27:36,904 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 22. At least one of the instances is being ignored.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: N in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: C in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: O in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OG in SER A 128.
+2026-09-12 00:27:36,904 WARNING:main.py:424:setup_molecule:Multiple occupancies found in SER A 128. At least one of the instances is being ignored.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 148.
+2026-09-12 00:27:36,904 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 148.
+2026-09-12 00:27:36,905 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 148.
+2026-09-12 00:27:36,905 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 148.
+2026-09-12 00:27:36,905 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 148.
+2026-09-12 00:27:36,905 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 148. At least one of the instances is being ignored.
+2026-09-12 00:27:36,906 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CA in ASN A 170.
+2026-09-12 00:27:36,906 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CB in ASN A 170.
+2026-09-12 00:27:36,907 WARNING:main.py:418:setup_molecule:Multiple occupancies found: CG in ASN A 170.
+2026-09-12 00:27:36,907 WARNING:main.py:418:setup_molecule:Multiple occupancies found: OD1 in ASN A 170.
+2026-09-12 00:27:36,907 WARNING:main.py:418:setup_molecule:Multiple occupancies found: ND2 in ASN A 170.
+2026-09-12 00:27:36,908 WARNING:main.py:424:setup_molecule:Multiple occupancies found in ASN A 170. At least one of the instances is being ignored.
+2026-09-12 00:27:36,908 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:27:36,913 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:27:36,926 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:27:36,930 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:27:36,931 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:27:36,931 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:27:36,963 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:27:37,065 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:27:37,186 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:27:37,460 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:27:37,462 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:27:37,463 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:27:37,474 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.

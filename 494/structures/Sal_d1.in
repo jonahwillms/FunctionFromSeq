@@ -1,0 +1,26 @@
+
+read
+    mol pqr structures/Sal_d1.pqr
+end
+
+elec
+    mg-auto
+    dime 161 161 161
+    cglen 150 150 150
+    fglen 120 120 120
+    cgcent mol 1
+    fgcent mol 1
+    mol 1
+    lpbe
+    bcfl sdh
+    pdie 2.0
+    sdie 78.0
+    chgm spl2
+    srfm smol
+    sdens 10.0
+    srad 1.4
+    temp 298.15
+    write pot dx structures/Sal_d1
+end
+
+quit

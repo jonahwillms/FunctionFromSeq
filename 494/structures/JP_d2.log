@@ -1,0 +1,25 @@
+2026-09-12 00:36:20,425 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:36:20,425 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:36:20,425 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:36:20,425 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:36:20,427 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:36:20,471 INFO:main.py:765:main_driver:Loading molecule: structures/JP_d2_clean.pdb
+2026-09-12 00:36:20,483 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:36:20,485 INFO:main.py:408:setup_molecule:Created biomolecule object with 61 residues and 475 atoms.
+2026-09-12 00:36:20,486 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:36:20,487 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:36:20,496 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:36:20,499 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 61
+2026-09-12 00:36:20,500 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 61
+2026-09-12 00:36:20,500 INFO:main.py:618:non_trivial:Attempting to repair 1 missing atoms in biomolecule.
+2026-09-12 00:36:20,500 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue THR A 61
+2026-09-12 00:36:20,501 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue THR A 61 at coordinates 17.674, -9.482, -4.179
+2026-09-12 00:36:20,501 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:36:20,501 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:36:20,511 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:36:20,544 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:36:20,598 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:36:20,675 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:36:20,676 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:36:20,676 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:36:20,680 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.

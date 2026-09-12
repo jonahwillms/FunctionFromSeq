@@ -1,0 +1,29 @@
+2026-09-12 00:32:04,645 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:32:04,645 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:32:04,645 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:32:04,645 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:32:04,646 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:32:04,694 INFO:main.py:765:main_driver:Loading molecule: structures/9M3L_clean.pdb
+2026-09-12 00:32:04,711 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:32:04,720 INFO:main.py:408:setup_molecule:Created biomolecule object with 315 residues and 2550 atoms.
+2026-09-12 00:32:04,721 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:32:04,726 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:32:04,734 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:32:04,738 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLY A 184
+2026-09-12 00:32:04,739 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue LEU B 183
+2026-09-12 00:32:04,739 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLY A 184
+2026-09-12 00:32:04,740 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue LEU B 183
+2026-09-12 00:32:04,740 INFO:main.py:618:non_trivial:Attempting to repair 2 missing atoms in biomolecule.
+2026-09-12 00:32:04,741 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue GLY A 184
+2026-09-12 00:32:04,741 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue LEU B 183
+2026-09-12 00:32:04,742 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue GLY A 184 at coordinates 4.471, 28.045, 31.573
+2026-09-12 00:32:04,742 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue LEU B 183 at coordinates 2.108, -6.706, 5.673
+2026-09-12 00:32:04,742 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:32:04,743 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:32:04,790 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:32:04,953 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:32:05,147 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:32:05,449 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:32:05,452 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:32:05,453 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:32:05,472 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.

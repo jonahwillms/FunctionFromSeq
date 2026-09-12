@@ -1,0 +1,229 @@
+2026-09-11 23:20:22,415 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:20:22,415 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:20:22,415 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:20:22,416 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:20:22,416 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:20:22,461 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2.pdb
+2026-09-11 23:20:22,474 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:20:22,478 INFO:main.py:408:setup_molecule:Created biomolecule object with 123 residues and 791 atoms.
+2026-09-11 23:20:22,478 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:20:22,480 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:20:22,487 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:20:22,490 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:20:22,491 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:20:22,491 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:20:22,505 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:20:22,556 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:20:22,619 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:20:22,727 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,728 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,729 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,729 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,730 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,730 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:20:22,740 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:20:22,740 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:20:22,741 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:20:22,742 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:20:22,903 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:20:22,905 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:20:22,905 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:20:22,911 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-11 23:35:20,892 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:35:20,893 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:35:20,893 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:35:20,893 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:35:20,894 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:35:20,946 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2.pdb
+2026-09-11 23:35:20,949 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:35:20,951 INFO:main.py:408:setup_molecule:Created biomolecule object with 123 residues and 791 atoms.
+2026-09-11 23:35:20,951 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:35:20,954 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:35:20,963 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:35:20,966 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:35:20,966 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:35:20,966 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:35:20,987 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:35:21,041 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:35:21,112 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:35:21,218 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,219 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,219 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,220 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,220 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,221 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:35:21,227 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:35:21,228 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:35:21,229 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:35:21,230 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:35:21,388 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:35:21,389 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:35:21,390 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:35:21,395 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-11 23:45:55,399 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:45:55,399 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:45:55,399 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:45:55,399 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:45:55,400 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:45:55,444 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-11 23:45:55,458 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:45:55,462 INFO:main.py:408:setup_molecule:Created biomolecule object with 123 residues and 791 atoms.
+2026-09-11 23:45:55,462 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:45:55,465 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:45:55,472 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:45:55,475 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:45:55,475 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:45:55,475 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:45:55,489 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:45:55,542 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:45:55,605 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:45:55,716 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,717 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,717 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,718 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,719 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,720 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:45:55,729 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:45:55,730 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:45:55,731 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:45:55,732 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:45:55,896 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:45:55,897 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:45:55,898 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:45:55,904 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-11 23:53:39,693 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:53:39,693 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:53:39,693 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:53:39,694 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:53:39,695 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:53:39,738 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-11 23:53:39,752 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:53:39,756 INFO:main.py:408:setup_molecule:Created biomolecule object with 123 residues and 791 atoms.
+2026-09-11 23:53:39,756 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:53:39,759 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:53:39,766 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:53:39,769 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-11 23:53:39,769 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:53:39,769 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:53:39,783 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:53:39,836 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:53:39,900 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:53:40,007 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,008 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,009 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,010 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,011 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,012 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 2005 skipped when optimizing H2 in HOH A 2006
+2026-09-11 23:53:40,021 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:53:40,022 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:53:40,023 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 2006 skipped when optimizing H2 in HOH A 2005
+2026-09-11 23:53:40,024 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:53:40,195 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:53:40,197 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:53:40,197 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:53:40,203 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-12 00:01:12,949 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:01:12,949 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:01:12,950 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:01:12,950 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:01:12,951 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:01:12,995 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-12 00:01:13,006 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:01:13,010 INFO:main.py:408:setup_molecule:Created biomolecule object with 99 residues and 767 atoms.
+2026-09-12 00:01:13,011 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:01:13,013 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:01:13,021 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:01:13,024 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:01:13,025 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:01:13,025 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:01:13,039 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:01:13,096 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:01:13,159 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:01:13,272 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:01:13,274 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:01:13,274 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:01:13,279 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-12 00:07:05,646 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:07:05,646 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:07:05,646 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:07:05,646 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:07:05,648 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:07:05,694 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-12 00:07:05,706 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:07:05,710 INFO:main.py:408:setup_molecule:Created biomolecule object with 99 residues and 767 atoms.
+2026-09-12 00:07:05,710 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:07:05,713 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:07:05,722 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:07:05,724 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:07:05,724 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:07:05,724 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:07:05,738 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:07:05,792 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:07:05,856 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:07:05,963 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:07:05,965 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:07:05,966 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:07:05,971 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-12 00:15:24,752 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:15:24,752 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:15:24,752 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:15:24,753 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:15:24,754 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:15:24,797 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-12 00:15:24,808 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:15:24,812 INFO:main.py:408:setup_molecule:Created biomolecule object with 99 residues and 767 atoms.
+2026-09-12 00:15:24,812 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:15:24,814 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:15:24,823 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:15:24,828 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:15:24,828 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:15:24,828 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:15:24,849 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:15:24,902 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:15:24,968 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:15:25,075 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:15:25,076 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:15:25,077 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:15:25,082 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-12 00:21:45,741 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:21:45,741 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:21:45,741 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:21:45,741 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:21:45,743 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:21:45,791 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-12 00:21:45,804 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:21:45,807 INFO:main.py:408:setup_molecule:Created biomolecule object with 99 residues and 767 atoms.
+2026-09-12 00:21:45,807 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:21:45,810 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:21:45,818 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:21:45,821 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:21:45,822 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:21:45,822 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:21:45,834 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:21:45,887 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:21:45,951 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:21:46,058 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:21:46,060 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:21:46,061 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:21:46,066 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.
+2026-09-12 00:28:01,147 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:28:01,147 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:28:01,147 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:28:01,147 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:28:01,148 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:28:01,191 INFO:main.py:765:main_driver:Loading molecule: structures/4UZ2_clean.pdb
+2026-09-12 00:28:01,203 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:28:01,207 INFO:main.py:408:setup_molecule:Created biomolecule object with 99 residues and 767 atoms.
+2026-09-12 00:28:01,207 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:28:01,210 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:28:01,218 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:28:01,221 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2026-09-12 00:28:01,221 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:28:01,221 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:28:01,236 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:28:01,305 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:28:01,370 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:28:01,479 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:28:01,481 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:28:01,481 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:28:01,487 WARNING:main.py:311:print_pqr:Ignoring 390 header lines in output.

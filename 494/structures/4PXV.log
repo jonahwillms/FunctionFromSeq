@@ -1,0 +1,421 @@
+2026-09-11 23:20:30,166 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:20:30,167 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:20:30,167 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:20:30,167 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:20:30,169 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:20:30,211 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV.pdb
+2026-09-11 23:20:30,222 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:20:30,224 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:20:30,224 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:20:30,225 INFO:main.py:408:setup_molecule:Created biomolecule object with 100 residues and 398 atoms.
+2026-09-11 23:20:30,225 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:20:30,226 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:20:30,233 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:20:30,235 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:20:30,236 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:20:30,236 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:20:30,236 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-11 23:20:30,237 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-11 23:20:30,237 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-11 23:20:30,237 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-11 23:20:30,237 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-11 23:20:30,237 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:20:30,238 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:20:30,244 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:20:30,266 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:20:30,303 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:20:30,359 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,360 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,361 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,361 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,364 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,364 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:20:30,365 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:20:30,366 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:20:30,367 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 201 skipped when optimizing H2 in HOH A 249
+2026-09-11 23:20:30,368 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:20:30,587 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:20:30,588 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:20:30,589 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:20:30,592 WARNING:main.py:311:print_pqr:Ignoring 821 header lines in output.
+2026-09-11 23:20:30,592 WARNING:main.py:315:print_pqr:Ignoring 2 missing lines in output.
+2026-09-11 23:35:28,597 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:35:28,597 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:35:28,597 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:35:28,597 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:35:28,599 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:35:28,640 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV.pdb
+2026-09-11 23:35:28,641 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:35:28,642 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:35:28,643 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:35:28,643 INFO:main.py:408:setup_molecule:Created biomolecule object with 100 residues and 398 atoms.
+2026-09-11 23:35:28,643 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:35:28,645 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:35:28,651 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:35:28,654 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:35:28,655 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:35:28,655 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:35:28,655 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-11 23:35:28,655 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-11 23:35:28,656 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-11 23:35:28,656 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-11 23:35:28,656 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-11 23:35:28,656 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:35:28,657 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:35:28,663 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:35:28,687 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:35:28,732 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:35:28,790 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,791 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,791 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,791 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,794 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,795 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:35:28,795 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:35:28,795 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:35:28,797 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 201 skipped when optimizing H2 in HOH A 249
+2026-09-11 23:35:28,798 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:35:29,023 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:35:29,024 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:35:29,024 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:35:29,027 WARNING:main.py:311:print_pqr:Ignoring 821 header lines in output.
+2026-09-11 23:35:29,027 WARNING:main.py:315:print_pqr:Ignoring 2 missing lines in output.
+2026-09-11 23:46:03,108 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:46:03,108 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:46:03,108 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:46:03,108 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:46:03,109 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:46:03,152 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-11 23:46:03,165 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:46:03,167 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:46:03,168 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:46:03,168 INFO:main.py:408:setup_molecule:Created biomolecule object with 100 residues and 398 atoms.
+2026-09-11 23:46:03,168 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:46:03,169 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:46:03,178 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:46:03,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:46:03,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:46:03,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:46:03,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:46:03,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:46:03,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:46:03,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:46:03,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:46:03,183 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:46:03,183 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:46:03,184 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:46:03,184 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-11 23:46:03,184 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-11 23:46:03,184 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-11 23:46:03,185 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-11 23:46:03,185 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-11 23:46:03,185 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:46:03,186 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:46:03,194 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:46:03,217 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:46:03,257 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:46:03,315 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,316 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,316 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,317 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,319 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,320 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:46:03,321 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:46:03,321 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:46:03,323 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 201 skipped when optimizing H2 in HOH A 249
+2026-09-11 23:46:03,324 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:46:03,548 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:46:03,550 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:46:03,550 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:46:03,554 WARNING:main.py:311:print_pqr:Ignoring 821 header lines in output.
+2026-09-11 23:46:03,554 WARNING:main.py:315:print_pqr:Ignoring 2 missing lines in output.
+2026-09-11 23:53:47,394 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-11 23:53:47,395 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-11 23:53:47,395 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-11 23:53:47,395 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-11 23:53:47,396 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-11 23:53:47,439 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-11 23:53:47,449 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-11 23:53:47,451 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:47,451 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for ZN.  Parsing as new residue.
+2026-09-11 23:53:47,451 INFO:main.py:408:setup_molecule:Created biomolecule object with 100 residues and 398 atoms.
+2026-09-11 23:53:47,451 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-11 23:53:47,453 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-11 23:53:47,461 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-11 23:53:47,464 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:53:47,465 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:53:47,466 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-11 23:53:47,466 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-11 23:53:47,467 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-11 23:53:47,467 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-11 23:53:47,467 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-11 23:53:47,467 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-11 23:53:47,467 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-11 23:53:47,468 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-11 23:53:47,468 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-11 23:53:47,475 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-11 23:53:47,500 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-11 23:53:47,537 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-11 23:53:47,593 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,594 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,595 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,595 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,598 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,598 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 240 skipped when optimizing H2 in HOH A 226
+2026-09-11 23:53:47,599 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:53:47,600 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H1 in HOH A 226 skipped when optimizing H1 in HOH A 240
+2026-09-11 23:53:47,601 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 201 skipped when optimizing H2 in HOH A 249
+2026-09-11 23:53:47,602 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2026-09-11 23:53:47,824 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-11 23:53:47,825 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-11 23:53:47,826 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-11 23:53:47,829 WARNING:main.py:311:print_pqr:Ignoring 821 header lines in output.
+2026-09-11 23:53:47,829 WARNING:main.py:315:print_pqr:Ignoring 2 missing lines in output.
+2026-09-12 00:01:20,307 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:01:20,307 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:01:20,307 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:01:20,308 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:01:20,309 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:01:20,352 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-12 00:01:20,363 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:01:20,366 INFO:main.py:408:setup_molecule:Created biomolecule object with 47 residues and 345 atoms.
+2026-09-12 00:01:20,366 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:01:20,368 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:01:20,374 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:01:20,377 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:01:20,378 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:01:20,378 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:01:20,378 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:01:20,378 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:01:20,378 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-12 00:01:20,378 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:01:20,379 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:01:20,379 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:01:20,379 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:01:20,379 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:01:20,379 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-12 00:01:20,380 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-12 00:01:20,380 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-12 00:01:20,380 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-12 00:01:20,380 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-12 00:01:20,380 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:01:20,381 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:01:20,387 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:01:20,410 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:01:20,434 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:01:20,491 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:01:20,492 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:01:20,492 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:01:20,495 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:07:12,988 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:07:12,988 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:07:12,989 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:07:12,989 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:07:12,990 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:07:13,033 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-12 00:07:13,045 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:07:13,047 INFO:main.py:408:setup_molecule:Created biomolecule object with 47 residues and 345 atoms.
+2026-09-12 00:07:13,047 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:07:13,048 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:07:13,057 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:07:13,060 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:07:13,061 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:07:13,061 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:07:13,062 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:07:13,062 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:07:13,062 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:07:13,062 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-12 00:07:13,063 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-12 00:07:13,063 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-12 00:07:13,063 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-12 00:07:13,064 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-12 00:07:13,064 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:07:13,065 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:07:13,072 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:07:13,095 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:07:13,121 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:07:13,176 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:07:13,177 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:07:13,177 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:07:13,181 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:15:32,110 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:15:32,110 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:15:32,110 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:15:32,110 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:15:32,112 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:15:32,154 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-12 00:15:32,165 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:15:32,167 INFO:main.py:408:setup_molecule:Created biomolecule object with 47 residues and 345 atoms.
+2026-09-12 00:15:32,167 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:15:32,169 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:15:32,178 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:15:32,180 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:15:32,180 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:15:32,180 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:15:32,180 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:15:32,181 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:15:32,181 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:15:32,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:15:32,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:15:32,182 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:15:32,182 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-12 00:15:32,182 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-12 00:15:32,183 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-12 00:15:32,183 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-12 00:15:32,183 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-12 00:15:32,183 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:15:32,184 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:15:32,190 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:15:32,212 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:15:32,236 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:15:32,291 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:15:32,292 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:15:32,292 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:15:32,295 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:21:53,053 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:21:53,053 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:21:53,053 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:21:53,054 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:21:53,055 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:21:53,100 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-12 00:21:53,109 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:21:53,111 INFO:main.py:408:setup_molecule:Created biomolecule object with 47 residues and 345 atoms.
+2026-09-12 00:21:53,112 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:21:53,113 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:21:53,121 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:21:53,123 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:21:53,123 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:21:53,124 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:21:53,125 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:21:53,125 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-12 00:21:53,125 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:21:53,125 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:21:53,125 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:21:53,125 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:21:53,126 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:21:53,126 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-12 00:21:53,126 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-12 00:21:53,126 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-12 00:21:53,127 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-12 00:21:53,127 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-12 00:21:53,127 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:21:53,128 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:21:53,136 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:21:53,160 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:21:53,185 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:21:53,243 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:21:53,244 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:21:53,244 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:21:53,247 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
+2026-09-12 00:28:08,472 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2026-09-12 00:28:08,472 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2026-09-12 00:28:08,472 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2026-09-12 00:28:08,473 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2026-09-12 00:28:08,474 INFO:main.py:763:main_driver:Loading topology files.
+2026-09-12 00:28:08,518 INFO:main.py:765:main_driver:Loading molecule: structures/4PXV_clean.pdb
+2026-09-12 00:28:08,530 INFO:main.py:770:main_driver:Setting up molecule.
+2026-09-12 00:28:08,532 INFO:main.py:408:setup_molecule:Created biomolecule object with 47 residues and 345 atoms.
+2026-09-12 00:28:08,532 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2026-09-12 00:28:08,533 INFO:main.py:604:non_trivial:Loading forcefield.
+2026-09-12 00:28:08,542 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2026-09-12 00:28:08,545 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:28:08,545 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:28:08,545 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:28:08,545 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:28:08,546 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:28:08,546 INFO:main.py:618:non_trivial:Attempting to repair 5 missing atoms in biomolecule.
+2026-09-12 00:28:08,547 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CG in residue LYS A 8
+2026-09-12 00:28:08,547 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CD in residue LYS A 8
+2026-09-12 00:28:08,547 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom CE in residue LYS A 8
+2026-09-12 00:28:08,547 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom NZ in residue LYS A 8
+2026-09-12 00:28:08,547 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER A 48
+2026-09-12 00:28:08,548 INFO:biomolecule.py:1077:repair_heavy:Added atom CG to residue LYS A 8 at coordinates 6.154, 12.541, -1.305
+2026-09-12 00:28:08,548 INFO:biomolecule.py:1077:repair_heavy:Added atom CD to residue LYS A 8 at coordinates 7.361, 12.195, -2.155
+2026-09-12 00:28:08,548 INFO:biomolecule.py:1077:repair_heavy:Added atom CE to residue LYS A 8 at coordinates 7.242, 10.845, -2.818
+2026-09-12 00:28:08,549 INFO:biomolecule.py:1077:repair_heavy:Added atom NZ to residue LYS A 8 at coordinates 8.444, 10.551, -3.638
+2026-09-12 00:28:08,549 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER A 48 at coordinates -6.273, 13.483, -16.063
+2026-09-12 00:28:08,549 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2026-09-12 00:28:08,550 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2026-09-12 00:28:08,557 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2026-09-12 00:28:08,580 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2026-09-12 00:28:08,604 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2026-09-12 00:28:08,658 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2026-09-12 00:28:08,659 INFO:main.py:713:non_trivial:Regenerating headers.
+2026-09-12 00:28:08,660 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2026-09-12 00:28:08,663 WARNING:main.py:311:print_pqr:Ignoring 391 header lines in output.
