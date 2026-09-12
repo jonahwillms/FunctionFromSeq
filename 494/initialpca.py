@@ -18,7 +18,7 @@ def analyze_df():
     ].copy()
 
 
-    '''feature_cols = [
+    feature_cols = [
     "radius_of_gyration",
     "principal_axis_1",
     "principal_axis_2",
@@ -29,10 +29,14 @@ def analyze_df():
     "moment_2",
     "moment_3",
     "moment_ratio_1",
-    "moment_ratio_2"
-        ]'''
-    feature_cols = [
-
+    "moment_ratio_2",
+    "helix_fraction",
+    "sheet_fraction",
+    "coil_fraction", 
+    'total_sasa',
+    ]
+    '''
+   feature_cols = [
     # ===== Layer 1: Sequence Features =====
 
     "length",
@@ -95,7 +99,7 @@ def analyze_df():
     # ===== Layer 2: Secondary Structure =====
 
     
-        ]   
+        ]  ''' 
 
 
     X = df[feature_cols]
@@ -146,6 +150,7 @@ def analyze_df():
         "Colour"
     ] = "SalB"
 
+    
     fig = px.scatter_3d(
         pca_df,
         x="PC1",
@@ -221,9 +226,9 @@ def analyze_df():
 
     fig = px.scatter_3d(
         geom_df,
-        x="axis_ratio_1",
-        y="axis_ratio_2",
-        z="moment_ratio_1",
+        x="helix_fraction",
+        y="sheet_fraction",
+        z='total_sasa',
         color="Colour",
         hover_data=[
             "Source",

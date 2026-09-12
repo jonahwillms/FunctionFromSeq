@@ -3,10 +3,13 @@ import pandas as pd
 import MDAnalysis as mda
 import numpy as np
 from MDAnalysis.analysis import dssp
+import freesasa
 
 def analyze_structure(pdb_file):
 
     u = mda.Universe(pdb_file)
+
+    print(f"Now analyzing {pdb_file}")
 
     atoms = u.select_atoms("protein")
 
@@ -46,23 +49,43 @@ def analyze_structure(pdb_file):
     feature_vector['moment_ratio_1'] = (inertia_eigs[0] / inertia_eigs[1])
     feature_vector['moment_ratio_2'] = (inertia_eigs[1]) / inertia_eigs[2]
 
+    #computing SASA
+    structure = freesasa.Structure(pdb_file)
+    result = freesasa.calc(structure)
+
+    total_sasa = result.totalArea()
+    feature_vector['total_sasa'] = float(total_sasa)
+
 
     #DSSP analysis
-    dssp_results = dssp.DSSP(u, select = 'protein').run()
+    protein = u.select_atoms("protein")
 
-    #single letter codes array (secondary structure elements)
-    ss = dssp_results.secondary_structure
-    #solvent accesibility per residue
-    acc = dssp_results.sasa
+    #alt locations in pdb files screw up analysis, need to remove
+    protein = protein.select_atoms("(not altloc B)")
 
+    valid_atoms = []
+    for res in protein.residues:
+        bb = res.atoms.select_atoms("name N CA C O")
+        if len(bb) == 4: #backbone is complete for residue
+            valid_atoms.extend(bb)
+
+    if len(valid_atoms) == 0:
+        feature_vector['helix_fraction'] = np.nan
+        feature_vector['sheet_fraction'] = np.nan
+        feature_vector['coil_fraction'] = np.nan
+        return feature_vector
+
+    backbone = mda.core.groups.AtomGroup(valid_atoms)
+    d = dssp.DSSP(backbone)
+    d.run()
+
+    ss = d.results['dssp'].flatten()
     ss_str = "".join(ss)
-
+    #print(ss_str)
+    
     feature_vector['helix_fraction'] = ss_str.count("H") / len(ss_str)
-    feature_vector['sheet_fraction'] = ss.str.count("E") / len(ss_str)
+    feature_vector['sheet_fraction'] = ss_str.count("E") / len(ss_str)
     feature_vector['coil_fraction'] = ss_str.count("-") / len(ss_str)
-
-    feature_vector['mean_sasa'] = float(np.mean(acc))
-    feature_vector['max_sasa'] = float(np.max(acc))
 
     return feature_vector
 
@@ -80,6 +103,7 @@ def apply_layer2(metadata):
 
         features.append(analyze_structure(id))
 
+    
     feature_df = pd.DataFrame(features)
 
     concat = pd.concat([working_df.reset_index(drop = True), feature_df], axis = 1)
