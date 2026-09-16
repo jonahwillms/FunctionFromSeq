@@ -21,6 +21,19 @@ def analyze_df():
 
 
     feature_cols = [
+        "length",
+            "MW",
+            "PI",
+            "instability_index",
+            "gravy",
+            
+            "LTA_motif_freq",
+            "max_basic_run",
+        
+            "aromatic_freq",
+        
+            
+
     "radius_of_gyration",
     "principal_axis_1",
     "principal_axis_2",
@@ -35,6 +48,7 @@ def analyze_df():
     "helix_fraction",
     "sheet_fraction",
     "coil_fraction", 
+
     'total_sasa',
     'std_potential',
     'mean_potential',
@@ -231,9 +245,9 @@ def analyze_df():
 
     fig = px.scatter_3d(
         geom_df,
-        x="std_potential",
-        y="mean_potential",
-        z='net_charge',
+        x="moment_1",
+        y="moment_2",
+        z='moment_3',
         color="Colour",
         hover_data=[
             "Source",
