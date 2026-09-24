@@ -13,6 +13,8 @@ including references for pdb structures
 b) run created excel sheet through all 3 layers in the pipeline, paste all ideal traits into one big dataframe
 
 c) pull all that shit, perform pca and output
+
+I want to also make sure that I can run multiple different uniprot searchs, so maybe I can input a list of searchs and iterate through them with a for loop
 '''
 
 

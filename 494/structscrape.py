@@ -252,12 +252,12 @@ def uniprot_search(terms,identity = 0.70, operator = "AND"):
     #filter pdb structures so that all inputted chains are monomers (this will match better with alphafold stuff)
     clean_metadata = clean_structure_folder(clean_metadata)
 
-    
-
     return clean_metadata
 
 
 
+    
+        
    
 
     
