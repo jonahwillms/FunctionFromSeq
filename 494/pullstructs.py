@@ -1,6 +1,8 @@
 from pathlib import Path
 import requests
 import pandas as pd
+import subprocess
+import os
 
 def download_pdb(pdb_id, out_dir = "structures"):
     pdb_id = pdb_id.upper()
@@ -72,3 +74,41 @@ def get_structures():
 
 
 #get_structures()
+
+def clean_structure_directory(win_dir):
+    """
+    Cleans the structure directory so only .pdb files remain.
+    Deletes:
+      - *_clean.pdb
+      - *_out/ directories
+      - all non-PDB files
+    """
+
+    # Convert Windows path to WSL path
+    wsl_dir = win_dir.replace("C:/", "/mnt/c/").replace("\\", "/")
+
+    for item in os.listdir(win_dir):
+        win_path = os.path.join(win_dir, item)
+
+        # Keep ONLY .pdb files (not *_clean.pdb)
+        if item.endswith(".pdb") and not item.endswith("_clean.pdb"):
+            continue
+
+        # Delete *_clean.pdb
+        if item.endswith("_clean.pdb"):
+            os.remove(win_path)
+            continue
+
+        # Delete fpocket output directories
+        if item.endswith("_out") and os.path.isdir(win_path):
+            wsl_path = win_path.replace("C:/", "/mnt/c/").replace("\\", "/")
+            subprocess.run(["wsl", "rm", "-rf", wsl_path], check=True)
+            continue
+
+        # Delete all other files (APBS, DX, PQR, JSON, logs, etc.)
+        if os.path.isfile(win_path):
+            os.remove(win_path)
+        else:
+            # Delete any other directories
+            wsl_path = win_path.replace("C:/", "/mnt/c/").replace("\\", "/")
+            subprocess.run(["wsl", "rm", "-rf", wsl_path], check=True)

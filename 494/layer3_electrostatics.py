@@ -3,6 +3,7 @@ import freesasa
 import subprocess
 import numpy as np
 import pandas as pd
+import pullstructs
 
 def strip_remarks(pdb_file, cleaned_file):
     skip_prefixes = (
@@ -104,6 +105,8 @@ def apply_layer3(metadata):
 
     with pd.ExcelWriter("layer3_analysis.xlsx") as writer:
         concat.to_excel(writer, sheet_name = '1', index = None)
+
+    pullstructs.clean_structure_directory("C:/Users/willm/OneDrive/Desktop/FunctionFromSeq/494/structures")
 
     return concat
 
